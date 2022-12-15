@@ -159,6 +159,10 @@ namespace ThuatToanDijkstra
         {
             if (cbbDiemCuoi.SelectedIndex == -1 || cbbDiemDau.SelectedIndex == -1)
             {
+                SGMap.Controls.Clear();
+                SGMap.Refresh();
+                g.pathIndex.Clear();
+                rtbLog.Clear();
                 MessageBox.Show("Mời chọn điểm đầu và điểm cuối", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
@@ -177,6 +181,10 @@ namespace ThuatToanDijkstra
             }
             if (cbbDiemDau.SelectedIndex == cbbDiemCuoi.SelectedIndex && cbbDiemDau.SelectedIndex!=-1)
             {
+                SGMap.Controls.Clear();
+                SGMap.Refresh();
+                g.pathIndex.Clear();
+                rtbLog.Clear();
                 MessageBox.Show("Không phản hồi\n Địa điểm đầu và cuối không được trùng nhau!", "Thông Báo");
             }
         }

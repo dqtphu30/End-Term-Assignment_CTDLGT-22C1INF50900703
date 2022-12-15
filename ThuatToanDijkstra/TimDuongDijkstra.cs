@@ -50,7 +50,6 @@ namespace ThuatToanDijkstra
     {
         public readonly int MAX_VERTICES = 100;
         public int n = 0;
-        int e;
         public int[,] adj;
         public Vertex[] vertexList;
         private readonly int INFINITY = 9999999;
